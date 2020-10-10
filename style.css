@@ -1,0 +1,37 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#navBanner {
+    background-color:#343a40;
+    color:white;
+    font-size:28px;
+    padding:10px;
+    font-weight:bold;
+}
+
+
+aside {
+    background-color:#f8f9fa;
+
+}
+
+label{
+        
+}
+
+section {
+
+}
+
+form {
+    padding-top:10px;
+}
+
+#citySearch{
+    padding-left:10px;
+}
+
+.cityList {
+    margin-bottom:20px;
+}
