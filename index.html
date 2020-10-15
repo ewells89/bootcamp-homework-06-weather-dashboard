@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>NYTSearch</title>
+    <title>Weather Dashboard</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -25,8 +25,8 @@
           Weather Dashboard
         </nav>
 
-        <div class="row" id="citySearch">
-            <aside class="col-sm-3">
+        <div class="row" id="rowId" >
+            <aside class="col-sm-3" id="cityList">
                 
                 <form>
                     <div>
@@ -43,30 +43,86 @@
                         </div>
                     </div>
 
-
-                   
                 </form>
 
-                <div class="cityList">
-                    <ul class="list-group">
-                        <li class="list-group-item">City Name #1</li>
-                    </ul>
-
-                    <ul class="list-group">
-                        <li class="list-group-item">City Name #2</li>
-                    </ul>
-
-                    <ul class="list-group">
-                        <li class="list-group-item">City Name #3</li>
+                <div class="card" id="cityList">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">City Name #1</li>
+                      <li class="list-group-item">City Name #2</li>
+                      <li class="list-group-item">City Name #3</li>
                     </ul>
                 </div>
 
             </aside>
             
-
             <section class="col-sm-9">
 
-            test
+                <div class="row" id="weatherCard" >
+                    <div class="card col-sm-12">
+                        <div class="card-body">
+                            <h4 class="card-title">City Name</h4>
+                            <p class="card-text">Weather Information</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="weatherCard" >
+                    <div>
+                        <h4>5-Day Forecast:</h4>
+                        <p></p>
+                    </div>
+
+                    <span  >
+                        <div class="card" style="width: 15rem;" id="forecastCard">
+                                <div class="card-body">
+                                    <h5 class="card-title">Forecast Date</h5>
+
+                                    <p class="card-text">Temperature Information</p>
+                                    <p class="card-text">Humidity Information</p>
+                                </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;" id="forecastCard">
+                            <div class="card-body">
+                                <h5 class="card-title">Forecast Date</h5>
+
+                                <p class="card-text">Temperature Information</p>
+                                <p class="card-text">Humidity Information</p>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 15rem;" id="forecastCard">
+                            <div class="card-body">
+                                <h5 class="card-title">Forecast Date</h5>
+
+                                <p class="card-text">Temperature Information</p>
+                                <p class="card-text">Humidity Information</p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card" style="width: 15rem;" id="forecastCard">
+                            <div class="card-body">
+                                <h5 class="card-title">Forecast Date</h5>
+
+                                <p class="card-text">Temperature Information</p>
+                                <p class="card-text">Humidity Information</p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card" style="width: 15rem;" id="forecastCard">
+                            <div class="card-body">
+                                <h5 class="card-title">Forecast Date</h5>
+
+                                <p class="card-text">Temperature Information</p>
+                                <p class="card-text">Humidity Information</p>
+                            </div>
+                        </div>
+
+                    </span>
+                </div>
 
             </section>
         

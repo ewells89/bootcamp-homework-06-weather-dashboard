@@ -32,6 +32,24 @@ form {
     padding-left:10px;
 }
 
-.cityList {
+#cityList {
     margin-bottom:20px;
+}
+
+#rowId {
+    padding-bottom:20px;
+    height:100%;
+    padding-left:15px;
+}
+
+#weatherCard {
+    margin:10px;
+}
+
+
+#forecastCard{
+    background-color:dodgerblue;
+    color:white;
+    float:left;
+    margin-right:30px
 }
