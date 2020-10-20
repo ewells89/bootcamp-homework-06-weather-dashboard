@@ -49,7 +49,7 @@ form {
 }
 
 
-#forecastCard{
+.forecastCard{
     background-color:dodgerblue;
     color:white;
     float:left;

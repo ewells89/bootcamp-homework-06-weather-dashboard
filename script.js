@@ -39,7 +39,7 @@ $("#searchBtn").on("click", function (event) {
                 dataType: "json"
             }).then (function (response) {
                 console.log(response);
-                $("#cityName").empty();
+                $("#cardBody").empty();
                 var cityName = response.city.name
                 console.log(cityName);
                 var cityTitle = $("<h4>");    
@@ -56,6 +56,8 @@ $("#searchBtn").on("click", function (event) {
                 var forecast = response.list
 
                 for (var i=0; i < 5 ;i++){
+                    var date =response.list[i].dt_txt
+                    // console.log(date)
                     var wxIcon = response.list[i].weather[0].icon;
                     // console.log(wxIcon);
                     var icon = $("<img>").attr("src", "https://openweathermap.org/img/wn/" + wxIcon + "@2x.png");
@@ -63,14 +65,26 @@ $("#searchBtn").on("click", function (event) {
                     // console.log(tempF);
                     var humidity = response.list[i].main.humidity + "%";
                     // console.log(humidity);
-                    var wind = response.list[i].wind.speed + " mph";
+                        
+                    
+                    $("#weatherCard").empty();
+                    $("#weatherCard").append("<h4>5-Day Forecast:</h4>");
+                    $("#weatherCard").append("<p></p>");
+
+                    $("#cardSection").empty();
+                    
+                    
+
+                    var cardDiv = $("<div>");
+                        cardDiv.attr("class", "forecastCard")
+
+                        cardDiv.append("<h5>" + date + "</h5>");
+                        cardDiv.append(icon);
+                        cardDiv.append("<p>Temperature: " + tempF + "</p>");
+                        cardDiv.append("<p>Humidity: " + humidity + "</p>");
+                        $("#cardSection").append(cardDiv);
+                        
                 }
-
-
-
             })
-
-        
-
         }
 });
