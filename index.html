@@ -35,7 +35,7 @@
                    
                     <div class="input-group mb-3">
 
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="location">
                         <div class="input-group-append">
                             <button class="btn btn-primary" type="button" id="searchBtn">
                                 <i class="fas fa-search"></i>    
@@ -59,9 +59,9 @@
 
                 <div class="row" id="weatherCard" >
                     <div class="card col-sm-12">
-                        <div class="card-body">
-                            <h4 class="card-title">City Name</h4>
-                            <p class="card-text">Weather Information</p>
+                        <div class="card-body" id="cardBody">
+                            <h4 class="card-title" id="cityName"></h4>
+                            <!-- <p class="card-text">Weather Information</p> -->
                         </div>
                     </div>
 
@@ -74,7 +74,7 @@
                     </div>
 
                     <span  >
-                        <div class="card" style="width: 15rem;" id="forecastCard">
+                        <div class="card" id="forecastCard">
                                 <div class="card-body">
                                     <h5 class="card-title">Forecast Date</h5>
 
@@ -83,7 +83,7 @@
                                 </div>
                         </div>
 
-                        <div class="card" style="width: 15rem;" id="forecastCard">
+                        <div class="card" id="forecastCard">
                             <div class="card-body">
                                 <h5 class="card-title">Forecast Date</h5>
 
@@ -92,17 +92,7 @@
                             </div>
                         </div>
 
-                        <div class="card" style="width: 15rem;" id="forecastCard">
-                            <div class="card-body">
-                                <h5 class="card-title">Forecast Date</h5>
-
-                                <p class="card-text">Temperature Information</p>
-                                <p class="card-text">Humidity Information</p>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card" style="width: 15rem;" id="forecastCard">
+                        <div class="card" id="forecastCard">
                             <div class="card-body">
                                 <h5 class="card-title">Forecast Date</h5>
 
@@ -112,7 +102,17 @@
                         </div>
 
                         
-                        <div class="card" style="width: 15rem;" id="forecastCard">
+                        <div class="card" id="forecastCard">
+                            <div class="card-body">
+                                <h5 class="card-title">Forecast Date</h5>
+
+                                <p class="card-text">Temperature Information</p>
+                                <p class="card-text">Humidity Information</p>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card" id="forecastCard">
                             <div class="card-body">
                                 <h5 class="card-title">Forecast Date</h5>
 
